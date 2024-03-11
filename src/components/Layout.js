@@ -10,15 +10,17 @@ export function Layout({
   children,
 }) {
   return (
-    <div className="text-slate-700">
-      <Header
-        withProfile={withProfile}
-        withDivider={withHeaderDivider}
-        navigation={navigation}
-        settings={settings}
-      />
-      <main>{children}</main>
-      <Footer withSignUpForm={withSignUpForm} settings={settings} />
-    </div>
+      <div className="text-slate-700">
+          <Header
+              withProfile={withProfile}
+              withDivider={withHeaderDivider}
+              navigation={navigation}
+              settings={settings}
+          />
+          <main>{children}</main>
+          <Footer withSignUpForm={withSignUpForm} settings={settings}/>
+
+          <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=lcplayers"></script>
+      </div>
   );
 }
